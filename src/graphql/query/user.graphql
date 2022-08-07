@@ -1,0 +1,18 @@
+query UserQuery($userId: Int!) {
+  users {
+    createdAt
+    updatedAt
+    address
+    email
+    nickName
+    avatar
+  }
+  user(id: $userId) {
+    createdAt
+    updatedAt
+    address
+    email
+    nickName
+    avatar
+  }
+}

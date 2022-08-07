@@ -1,0 +1,39 @@
+.rhap_container {
+  border-radius: 10px;
+  height: 200px;
+  background-color:  rgba(0, 0, 0, 0.2);
+
+  .rhap_current-time, .rhap_time, .rhap_button-clear {
+    color: #FFF;
+  }
+
+  .rhap_progress-indicator {
+    background: #2ebf91;
+  }
+
+  .rhap_button-clear {
+    height: 48px;
+    width: 48px;
+
+    & svg {
+      height: 48px;
+      width: 48px;
+    }
+  }
+}
+
+
+._1ceqH {
+  width: 100%;
+  background-color:  rgba(0, 0, 0, 0);
+  
+
+  ._dt3-T {
+    background:  rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  ._1lB9c {
+    background-color:  rgba(0, 0, 0, 0);
+    color: #fff;
+  }
+}

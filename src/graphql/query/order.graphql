@@ -1,0 +1,25 @@
+query OrderQuery($getOrderId: Int!) {
+  getOrder(id: $getOrderId) {
+    id
+    duration
+    owner
+    status
+    answerer
+    description
+    createdAt
+    expired
+  }
+}
+
+query OrderQueryAll {
+  getOrders {
+    id
+    duration
+    owner
+    status
+    answerer
+    description
+    createdAt
+    expired
+  }
+}

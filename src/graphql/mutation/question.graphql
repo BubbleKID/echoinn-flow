@@ -1,0 +1,10 @@
+mutation Mutation($createQuestion: CreateQuestionInput!) {
+  createQuestion(createQuestion: $createQuestion) {
+    id
+    claim
+    ownerAddress
+    answerer
+    brief
+    createdAt
+  }
+}

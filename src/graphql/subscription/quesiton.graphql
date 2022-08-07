@@ -1,0 +1,7 @@
+subscription AddSubscription {
+  questionAdded
+}
+
+subscription UpdateSubscription {
+  quesquestionUpdatedt
+}

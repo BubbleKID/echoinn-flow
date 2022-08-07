@@ -1,0 +1,3 @@
+mutation UploadAudio($uploadAudioFile2: Upload!, $uploadAudioClaim2: String!) {
+  uploadAudio(file: $uploadAudioFile2, claim: $uploadAudioClaim2)
+}

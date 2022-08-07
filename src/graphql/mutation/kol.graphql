@@ -1,0 +1,21 @@
+mutation KOLMutation(
+  $createKolInput: CreateKolInput!
+  $updateKolInput: UpdateKolInput!
+) {
+  createKol(createKolInput: $createKolInput) {
+    id
+    status
+    kolAddress
+    createdAt
+    updatedAt
+    floorPrice
+  }
+  updateKol(updateKolInput: $updateKolInput) {
+    id
+    status
+    kolAddress
+    createdAt
+    updatedAt
+    floorPrice
+  }
+}

@@ -1,0 +1,23 @@
+.rhap_container {
+  border-radius: 10px;
+  height: 200px;
+  background-color:  rgba(0, 0, 0, 0.2);
+
+  .rhap_current-time, .rhap_time, .rhap_button-clear {
+    color: #FFF;
+  }
+
+  .rhap_progress-indicator {
+    background: #2ebf91;
+  }
+
+  .rhap_button-clear {
+    height: 48px;
+    width: 48px;
+
+    & svg {
+      height: 48px;
+      width: 48px;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+mutation OrderMutation(
+  $removeOrderId: Int!
+  $updateOrderInput: UpdateOrderInput!
+  $createOrderInput: CreateOrderInput!
+) {
+  removeOrder(id: $removeOrderId) {
+    id
+    duration
+    owner
+    status
+    answerer
+    description
+    createdAt
+    expired
+  }
+  updateOrder(updateOrderInput: $updateOrderInput) {
+    id
+    duration
+    owner
+    status
+    answerer
+    description
+    createdAt
+    expired
+  }
+
+  createOrder(createOrderInput: $createOrderInput) {
+    id
+    duration
+    owner
+    status
+    answerer
+    description
+    createdAt
+    expired
+  }
+}

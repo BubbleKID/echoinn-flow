@@ -1,0 +1,19 @@
+query KOLQuery($getKolId: Int!) {
+  getAllKol {
+    id
+    status
+    kolAddress
+    createdAt
+    updatedAt
+    floorPrice
+  }
+
+  getKol(id: $getKolId) {
+    id
+    status
+    kolAddress
+    createdAt
+    updatedAt
+    floorPrice
+  }
+}

@@ -1,0 +1,21 @@
+mutation UserMutation(
+  $createUserInput: CreateUserInput!
+  $updateUserInput: UpdateUserInput!
+) {
+  createUser(createUserInput: $createUserInput) {
+    createdAt
+    updatedAt
+    address
+    email
+    nickName
+    avatar
+  }
+  updateUser(updateUserInput: $updateUserInput) {
+    createdAt
+    updatedAt
+    address
+    email
+    nickName
+    avatar
+  }
+}

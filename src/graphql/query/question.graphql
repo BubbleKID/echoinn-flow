@@ -1,0 +1,21 @@
+query QuestionQuery($getQuestionId: Int!) {
+  getQuestion(id: $getQuestionId) {
+    id
+    claim
+    ownerAddress
+    answerer
+    brief
+    createdAt
+  }
+}
+
+query QuestionAllQuery {
+  getAllQuestion {
+    id
+    claim
+    ownerAddress
+    answerer
+    brief
+    createdAt
+  }
+}
