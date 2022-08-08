@@ -13,6 +13,6 @@ Start dev server
 Host static files from build folder  
 `npm run start`  
 Run unit testing  
-`npm run test` 
+`npm run test`  
 Add @onflow/fcl  
 `npm install @onflow/fcl --save --legacy-peer-deps`
