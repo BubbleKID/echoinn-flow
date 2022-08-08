@@ -1,9 +1,9 @@
 export const MINT_COL_NFT=`
 
-import NonFungibleToken from "../contracts/NonFungibleToken.cdc"
-import ExampleNFT from "../contracts/ExampleNFT.cdc"
-import MetadataViews from "../contracts/MetadataViews.cdc"
-import FungibleToken from "../contracts/FungibleToken.cdc"
+import NonFungibleToken from "0x8df565bfae3cce15"
+import ExampleNFT from "0x8df565bfae3cce15"
+import MetadataViews from "0x8df565bfae3cce15"
+import FungibleToken from "0x8df565bfae3cce15"
 transaction(
   brief: String,
   kolAddress: String ,
