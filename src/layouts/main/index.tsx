@@ -10,7 +10,8 @@ import MainFooter from './MainFooter';
 import MainHeader from './MainHeader';
 // hooks
 import useAuth from '../../hooks/useAuth';
-
+// in the browser
+import * as fcl from "@onflow/fcl";
 // querys
 import { gql, useLazyQuery } from '@apollo/client';
 // ----------------------------------------------------------------------
@@ -38,13 +39,11 @@ export default function MainLayout() {
   const [getUser, { loading, error, data }] = useLazyQuery(GET_USER);
 
   const connectWallet = async () => {
-    if(userAddress) {
-      const userData = await getUser({variables: { userAddress: userAddress}});    
-      await fakeMetaMaskLogin(userAddress, userData);
-      console.log('publicAddress', publicAddress);
-    } else {
-      connect();
-    }
+    fcl.config({
+      "discovery.wallet": "https://fcl-discovery.onflow.org/testnet/authn", // Endpoint set to Testnet
+    });
+
+    fcl.authenticate();
   };
 
   // to do: put publicAddress in store
